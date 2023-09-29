@@ -1,0 +1,37 @@
+{
+  "name": "c2ladders",
+  "version": "1.0.0",
+  "description": "Recreation of the famous A2OJ Ladders with updated data from codeforces website.",
+  "main": "index.js",
+  "scripts": {
+    "build": "NODE_ENV=production npm i && cd frontend && npm i && npm run build && cd ../backend && npm i && npm run build",
+    "start": "node ./bin/www",
+    "clean": "rm -rf node_modules/ && cd backend && rm -rf node_modules/ && cd ../frontend && rm -rf node_modules/ && cd ..",
+    "test": "echo \"Error: no test specified\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/prince776/c2ladders.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/prince776/c2ladders/issues"
+  },
+  "homepage": "https://github.com/prince776/c2ladders#readme",
+  "dependencies": {
+    "@types/node": "^20.7.1",
+    "cors": "^2.8.5",
+    "debug": "^4.3.3",
+    "express": "^4.18.2",
+    "http": "^0.0.1-security",
+    "mongoose": "^7.5.3",
+    "node-cache": "^5.1.2",
+    "typescript": "^5.2.2"
+  },
+  "devDependencies": {
+    "@types/cors": "^2.8.14",
+    "@types/express": "^4.17.18",
+    "ts-node": "^10.9.1"
+  }
+}
